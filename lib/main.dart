@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:abopt_box/details_screen.dart';
 import 'package:abopt_box/homepage_box.dart';
 import 'package:abopt_box/urgent_post.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +17,12 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       //initialRoute: HomePage_Box.home,
-      initialRoute: UrgentPost_Box.urgent,
+      //initialRoute: UrgentPost_Box.urgent,
+      initialRoute: Details_Screen.detail,
       routes: {
         HomePage_Box.home: (context) => HomePage_Box(),
         UrgentPost_Box.urgent: (context) => UrgentPost_Box(),
+        Details_Screen.detail: (context) => Details_Screen(),
       },
     );
   }
