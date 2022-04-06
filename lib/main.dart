@@ -19,8 +19,8 @@ class Myapp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //initialRoute: HomePage_Box.home,
       //initialRoute: UrgentPost_Box.urgent,
-      initialRoute: Details_Screen.detail,
-      //initialRoute: Blog_Box.blog,
+      //initialRoute: Details_Screen.detail,
+      initialRoute: Blog_Box.blog,
       routes: {
         HomePage_Box.home: (context) => HomePage_Box(),
         UrgentPost_Box.urgent: (context) => UrgentPost_Box(),

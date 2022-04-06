@@ -10,7 +10,11 @@ class Blog_Box extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 40, left: 15, right: 15),
+        padding: const EdgeInsets.only(
+          top: 40,
+          left: 12,
+          right: 12,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -22,17 +26,17 @@ class Blog_Box extends StatelessWidget {
                   height: 11,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 16,
                 ),
                 Text(
-                  "Details",
+                  "Blog",
                   style: TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 7,
                 ),
                 Container(
                   height: 32,
@@ -42,7 +46,12 @@ class Blog_Box extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 8),
+                    padding: const EdgeInsets.only(
+                      left: 18,
+                      right: 209,
+                      top: 11,
+                      bottom: 6,
+                    ),
                     child: Row(
                       children: [
                         Image.asset(
@@ -55,21 +64,29 @@ class Blog_Box extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 20,
+              height: 26,
             ),
             Container(
-              height: 90,
+              height: 89,
               width: double.maxFinite,
               decoration: BoxDecoration(
                 color: Color(0xffA2FECF).withOpacity(0.2),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Image.asset(
-                "assets/icon/Bird.png",
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 15,
+                  bottom: 15,
+                  right: 122,
+                  left: 122,
+                ),
+                child: Image.asset(
+                  "assets/icon/Bird.png",
+                ),
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
             Text(
               "Title for blog ",
@@ -79,7 +96,7 @@ class Blog_Box extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 5,
+              height: 1,
             ),
             RichText(
               text: TextSpan(
@@ -91,6 +108,7 @@ millions of designers, developers, and content creators.''',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 6,
+                  fontWeight: FontWeight.w400,
                 ),
                 children: const <TextSpan>[
                   TextSpan(
