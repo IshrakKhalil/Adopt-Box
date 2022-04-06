@@ -98,29 +98,32 @@ class Blog_Box extends StatelessWidget {
             SizedBox(
               height: 1,
             ),
-            RichText(
-              text: TextSpan(
-                text:
-                    '''Font Awesome is the internet's icon library and toolkit used by millions of designers,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '''Font Awesome is the internet's icon library and toolkit used by millions of designers,
 developers, and content creators.Font Awesome is the internet's icon library and toolkit used by millions
 of designers, developers, and content creators.Font Awesome is the internet's icon library and toolkit used by
 millions of designers, developers, and content creators.''',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 6,
-                  fontWeight: FontWeight.w400,
-                ),
-                children: const <TextSpan>[
-                  TextSpan(
-                    text: 'Read More...',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 7,
-                    ),
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 6,
+                    fontWeight: FontWeight.w400,
                   ),
-                ],
-              ),
+                ),
+                SizedBox(
+                  height: 1,
+                ),
+                Text(
+                  "Read More",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 6,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
