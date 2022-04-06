@@ -54,7 +54,9 @@ class Blog_Box extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            SizedBox(
+              height: 20,
+            ),
             Container(
               height: 90,
               width: double.maxFinite,
