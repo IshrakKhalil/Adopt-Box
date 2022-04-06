@@ -14,8 +14,8 @@ class Details_Screen extends StatelessWidget {
         alignment: Alignment.bottomCenter,
         children: [
           Container(
-            width: double.maxFinite,
-            height: 350,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height * 0.5,
             decoration: BoxDecoration(
               border: Border.all(
                 color: Color(0xffFECFA3),
@@ -27,7 +27,12 @@ class Details_Screen extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.only(
+                top: 22,
+                left: 12,
+                right: 12,
+                bottom: 23,
+              ),
               child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                 child: Column(
@@ -91,7 +96,7 @@ class Details_Screen extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 5,
+                      height: 14,
                     ),
                     Row(
                       children: [
@@ -111,6 +116,9 @@ class Details_Screen extends StatelessWidget {
                                   fontSize: 12,
                                 ),
                               ),
+                              SizedBox(
+                                height: 5,
+                              ),
                               Text(
                                 "Sex",
                                 style: TextStyle(
@@ -122,7 +130,7 @@ class Details_Screen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: 5,
+                          width: 8,
                         ),
                         Container(
                           width: 60,
@@ -149,7 +157,7 @@ class Details_Screen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: 5,
+                          width: 8,
                         ),
                         Container(
                           width: 60,
@@ -176,7 +184,7 @@ class Details_Screen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: 5,
+                          width: 8,
                         ),
                         Container(
                           width: 60,
@@ -205,7 +213,7 @@ class Details_Screen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: 5,
+                          width: 8,
                         ),
                         Container(
                           width: 60,
@@ -236,7 +244,7 @@ class Details_Screen extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 5,
+                      height: 28,
                     ),
                     Text(
                       "Details",
@@ -258,7 +266,7 @@ class Details_Screen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 5,
+                      height: 20,
                     ),
                     Text(
                       "Description",
@@ -280,7 +288,7 @@ looking at its layout. The point of using Lorem ''',
                       ),
                     ),
                     SizedBox(
-                      height: 5,
+                      height: 20,
                     ),
                     Text(
                       "Term and condition",
@@ -302,11 +310,11 @@ looking at its layout. The point of using Lorem ''',
                       ),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 20,
                     ),
                     Container(
                       height: 50,
-                      width: 324,
+                      width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(7),
                         color: Color(0xffFFDD99),
@@ -329,7 +337,11 @@ looking at its layout. The point of using Lorem ''',
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 40, left: 15, right: 15),
+            padding: const EdgeInsets.only(
+              top: 40,
+              left: 12,
+              right: 12,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -347,21 +359,26 @@ looking at its layout. The point of using Lorem ''',
                       "Details",
                       style: TextStyle(
                         fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                     SizedBox(
-                      width: 225,
+                      width: 236,
                     ),
                     Container(
                       height: 20,
-                      width: 25,
+                      width: 23,
                       decoration: BoxDecoration(
                         color: Color(0xffFFDD99),
-                        borderRadius: BorderRadius.circular(7),
+                        borderRadius: BorderRadius.circular(4),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.only(
+                          top: 3,
+                          bottom: 3,
+                          left: 4,
+                          right: 5,
+                        ),
                         child: SvgPicture.asset(
                           "assets/icon/heart.svg",
                         ),
@@ -370,7 +387,7 @@ looking at its layout. The point of using Lorem ''',
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 34,
                 ),
                 Stack(
                   alignment: Alignment.bottomRight,
@@ -384,34 +401,37 @@ looking at its layout. The point of using Lorem ''',
                       child: Image.asset(
                         "assets/icon/Duck 1.png",
                         width: 100,
-                        height: 150,
+                        height: 166,
                       ),
                     ),
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 22,
                 ),
                 Row(
                   children: [
                     Image.asset(
                       "assets/icon/Duck 2.png",
-                      width: 50,
-                      height: 100,
+                      width: 38,
+                      height: 64,
                     ),
                     SizedBox(
                       width: 10,
                     ),
                     Container(
-                      padding: EdgeInsets.all(5),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 4,
+                      ),
                       decoration: BoxDecoration(
-                        color: Color(0xffFFDD99),
+                        color: Color(0xffFFDD99).withOpacity(.4),
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: Image.asset(
                         "assets/icon/Duck 1.png",
-                        width: 50,
-                        height: 100,
+                        width: 38,
+                        height: 64,
                       ),
                     ),
                     SizedBox(
@@ -419,13 +439,10 @@ looking at its layout. The point of using Lorem ''',
                     ),
                     Image.asset(
                       "assets/icon/Duck 2.png",
-                      width: 50,
-                      height: 100,
+                      width: 38,
+                      height: 64,
                     ),
                   ],
-                ),
-                SizedBox(
-                  height: 20,
                 ),
               ],
             ),
