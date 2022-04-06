@@ -250,8 +250,8 @@ class Details_Screen extends StatelessWidget {
                     ),
                     Text(
                       '''1.Alargic
-                          2.cold
-                          3.jolotonko''',
+2.cold
+3.jolotonko''',
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.black,
@@ -272,8 +272,8 @@ class Details_Screen extends StatelessWidget {
                     ),
                     Text(
                       '''It is a long established fact that a reader will be 
-                          distracted by the readable content of a page when
-                          looking at its layout. The point of using Lorem ''',
+distracted by the readable content of a page when
+looking at its layout. The point of using Lorem ''',
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.black,
@@ -294,8 +294,8 @@ class Details_Screen extends StatelessWidget {
                     ),
                     Text(
                       '''It is a long established fact that a reader will be 
-                          distracted by the readable content of a page when
-                          looking at its layout. The point of using Lorem ''',
+ distracted by the readable content of a page when
+looking at its layout. The point of using Lorem ''',
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.black,
