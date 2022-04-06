@@ -17,6 +17,9 @@ class Details_Screen extends StatelessWidget {
             width: double.maxFinite,
             height: 350,
             decoration: BoxDecoration(
+              border: Border.all(
+                color: Color(0xffFECFA3),
+              ),
               color: Color(0xffFFF1D6).withOpacity(.8),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(40),
