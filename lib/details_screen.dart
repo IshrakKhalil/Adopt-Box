@@ -24,19 +24,16 @@ class Details_Screen extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(
-                top: 25,
-                right: 85,
-                left: 10,
-              ),
+              padding: const EdgeInsets.only(top: 15, left: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "Mikey",
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
+                      color: Colors.black.withOpacity(.6),
                     ),
                   ),
                 ],
