@@ -1,6 +1,7 @@
 // ignore_for_file: override_on_non_overriding_member, prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class CatBox extends StatelessWidget {
   static const String animaiton = "CatBox";
@@ -13,11 +14,15 @@ class CatBox extends StatelessWidget {
         child: Stack(
           alignment: Alignment.centerLeft,
           children: [
-            Image.asset("assets/icon/cat-tale.png"),
+            Lottie.asset(
+              "assets/icon/animation.json",
+              height: 250,
+              width: 350,
+            ),
             Padding(
               padding: const EdgeInsets.only(
-                bottom: 25,
-                left: 5,
+                bottom: 40,
+                left: 100,
               ),
               child: Text(
                 "Login",
@@ -28,8 +33,8 @@ class CatBox extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(
-                top: 60,
-                left: 5,
+                top: 50,
+                left: 100,
               ),
               child: Text(
                 "PLease sign in to continue",
